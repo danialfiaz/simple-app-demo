@@ -7,7 +7,7 @@ replicaCount: 1
 image: /:-ELASTIC
   repository: wang/alpine-go-echo-server
   # sed -i -e "s/^\(  tag:\).*/\1 $CI_COMMIT_SHA/" ops/values.yaml
-  tag: 0.1
+$IMAGE_TAG
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []

@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: wang/alpine-go-echo-server
   # sed -i -e "s/^\(  tag:\).*/\1 $CI_COMMIT_SHA/" ops/values.yaml
-  tag: 0.1
+  tag: 
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -47,7 +47,7 @@ sidecar:
   name: my-app-name-sidecar
   enabled: false
   image: /:-ELASTIC
-    tag: 0.1
+    tag: 
     repository: wang/alpine-go-echo-server
     pullPolicy: IfNotPresent
   port: 3001
